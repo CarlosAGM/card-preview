@@ -1,0 +1,100 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark: hsl(212, 21%, 14%);
+  --dark-gray: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  width: 600px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+}
+.card-header {
+  width: 50%;
+  height: 100%;
+  display: block;
+  margin-right: 35px;
+}
+.card-body {
+  align-items: center;
+}
+.card-body-subtitle {
+  color: var(--dark-gray);
+  margin-top: 35px;
+  font-size: 11px;
+  letter-spacing: 5px;
+}
+.card-body-title {
+  margin-top: 25px;
+  font-family: "Fraunces";
+  font-size: 30px;
+  color: var(--very-dark);
+  padding-right: 70px;
+}
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 14px;
+  padding-right: 30px;
+}
+.card-body-price {
+  display: flex;
+}
+.card-body-price-normal {
+  color: var(--dark-cyan);
+  margin-right: 25px;
+  font-size: 30px;
+  font-family: "Fraunces";
+}
+.card-body-price-desc {
+  color: var(--dark-gray);
+  margin-top: 35px;
+  font-size: 11px;
+  text-decoration: line-through;
+}
+.card-body-boton {
+  display: flex;
+  width: 236px;
+  height: 45px;
+  border-radius: 12px;
+  background-color: var(--dark-cyan);
+}
+.card-body-boton-carrito {
+  margin-top: 14px;
+  margin-left: 70px;
+  margin-right: 10px;
+  height: 16px;
+}
+.card-body-boton-texto {
+  font-size: 13px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+}/*# sourceMappingURL=estilos.css.map */

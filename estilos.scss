@@ -1,0 +1,111 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark: hsl(212, 21%, 14%);
+    --dark-gray: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 16px;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+
+
+    &-header {
+        width: 50%;
+        height: 100%;
+        display: block;
+        margin-right: 35px;
+        
+    }
+    &-body {
+        align-items: center;
+        &-subtitle {
+            color: var(--dark-gray);
+            margin-top: 35px;
+            font-size: 11px;
+            letter-spacing: 5px;
+        }
+        &-title{
+            margin-top: 25px;
+            font-family: 'Fraunces';
+            font-size: 30px;
+            color: var(--very-dark);
+            padding-right: 70px;
+        }
+        &-text{
+            color: var(--dark-gray);
+            font-size: 14px;
+            padding-right: 30px;  
+        }
+        &-price{
+            display: flex;
+            &-normal{
+                color: var(--dark-cyan);
+                margin-right: 25px;
+                font-size: 30px;
+                font-family: 'Fraunces';
+            }
+            &-desc{
+                color: var(--dark-gray);
+                margin-top: 35px;
+                font-size: 11px;
+                text-decoration: line-through;
+            }
+        }
+        &-boton{
+            display: flex;
+            width: 236px;
+            height: 45px;
+            border-radius: 12px;
+            background-color: var(--dark-cyan);
+            &-carrito{
+                margin-top: 14px;
+                margin-left: 70px;
+                margin-right: 10px;
+                height: 16px;
+            }
+            &-texto{
+                font-size: 13px;
+                margin-top: 15px;
+                color: white;
+                font-weight: bold;
+                
+      
+            }
+            
+        }
+
+        
+    }
+}
+
